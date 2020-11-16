@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(images/logo.jpg);
+    background-size: 200px;
+}
+h1{
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+h3{
+    color: rgb(74, 74, 179);
+    background-color: rgb(255, 220, 220);
+    font-family: cursive;
+    font-weight: normal;
+}
+header,footer{
+    background-color: rgb(169, 219, 221);
+    padding: 30px;
+}
+header{
+    text-align: center;
+}
+p{
+    color: darkslategrey ;
+    line-height: 30px;
+}
+.service-item{
+    border:chocolate 2px solid;
+    width: 30%;
+    display:inline-block;
+    vertical-align: top;
+    min-height:120px ;
+}
+.services{
+    text-align: center;
+}
+nav a{
+    color: darkgreen;
+    text-decoration: none;
+}
+
+footer a{
+    color: darkslategrey;
+    text-decoration: none;
+}
+
+main{
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
