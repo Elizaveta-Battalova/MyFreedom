@@ -1,0 +1,7 @@
+textarea{
+    resize: none;
+}
+input[type="text"]:focus{
+border: red 1px solid;
+outline: none;
+}

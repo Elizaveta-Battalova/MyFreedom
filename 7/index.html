@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="#" method="POST">
+        <label for="">ваше имя:</label>
+        <input type="text" name="name" value="Вася" placeholder="Ваня" required disabled>
+        <label for="">Password</label>
+        <input type="text" name="name" value="Вася" placeholder="Ваня" required>
+        <input type="password">
+        <input type="color">
+        <input type="number">
+        <input type="email">
+        <input type="search">
+        <input type="file">
+        <p>вопрос</p>
+        <input type="radio" name="yes-or-no" id="yes"><label for="yes">yes</label>
+        <label><input type="radio" name="yes-or-no" checked>no</label>
+        <label>Подписаться на рассылку<input type="checkbox" name="subscribe" checked></label>
+        <label>Your city
+            <select name="city" id="">
+                <option value="minsk">minsk</option>
+                <option value="moscow">moscow</option>
+                <option value="london" selected>london</option>
+            </select>
+        </label>
+
+        <label>Your favourite city
+            <select name="favourite" multiple>
+                <option value="minsk">minsk</option>
+                <option value="moscow">moscow</option>
+                <option value="london" selected>london</option>
+            </select>
+        </label>
+
+        <label>
+            <textarea name="message" placeholder="thanks">good morning</textarea>
+        </label>
+        <input type="submit" value="send">
+        <button>send</button>
+    </form>
+</body>
+</html>
