@@ -1,0 +1,38 @@
+.carousel-item{
+    background-color: rgb(36, 35, 35);
+    text-align: center;
+    color: white;
+    padding: 100px 0;
+}
+.carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: transparent;
+}
+.carousel-indicators li.active{
+    background-color: rgb(184, 184, 255);
+}
+.some-class::after{
+content: "";
+display: block;
+width: 0;
+height: 0;
+border-top: 20px solid transparent;
+border-right: 20px solid transparent;
+border-left: 20px solid transparent;
+border-bottom: 20px solid red;
+margin: auto;
+opacity: 0;
+transition: .5s;
+}
+.some-class:hover::after{
+    opacity: 1;
+}
+.some-class > div{
+    transition: .5s;
+}
+.some-class:hover > div{
+transform: translateY(30px);
+}
