@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header, footer{
+  background-color: rgb(186, 188, 209);
+  padding: 20px 0;
+}
+.logo{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: rgb(63, 87, 67);
+  display: inline-block;
+}
+a{
+  display: inline-block;
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
+.container{
+  max-width: 1100px;
+  margin: auto;
+}
+html, body, .wrapper{
+height: 100%;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+}
+main{
+  flex-grow: 1;
+  padding: 20px 0;
+  background-color: rgb(220, 219, 221);
+}
+h1, h2, h3 {
+  padding: 50px;
+  text-align: center;
+}
+.flex-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.toggle{
+  background-color: white;
+  padding: 5px;
+  border-radius: 15%;
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  display:none;
+}
+.flex-wrapper > div{
+flex-basis: 15%;
+}
+@media(max-width: 1100px){
+  .container{
+      max-width: 90%;
+  }
+}
+
+@media(max-width: 768px){
+.flex-wrapper{
+  flex-wrap: wrap;
+}
+.flex-wrapper > div{
+  flex-basis: 30%;
+  }
+}
+@media(max-width:500px){
+  .flex-wrapper > div{
+      flex-basis: 100%;
+      }
+      .toggle{
+          display: block;
+      }
+      nav{
+          display: none;
+      }
+      .toggle:hover + nav{
+          display: flex;
+          flex-direction: column;
+      }
+}
+
